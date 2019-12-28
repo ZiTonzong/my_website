@@ -1,0 +1,29 @@
+.index_body{
+    background-color: white;
+    width: 100%;
+    display: block;
+
+}
+.index_body_text_right{
+    color: white;
+    padding-left: 850px;
+    margin-top: -350px;
+}
+.index_body_text_right_2{
+    color: #787878;
+    padding-left: 700px;
+}
+.video_cdk_1{
+    padding-left: 60px;
+}
+.index_body_a_1{
+    color: #785153;
+}
+.index_body_a_2{
+    color: dimgray;
+}
+.test11{
+    display: inline-block;
+    border: red solid 1px;
+
+}
