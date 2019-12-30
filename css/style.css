@@ -141,6 +141,9 @@ img{
 .top-bar {
     background: #fff;
     padding: 10px 0;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    /* background: #fafafa; */
 }
 /*-- Logo --*/
 .logo {
@@ -1006,7 +1009,7 @@ i.fa.fa-scissors {
 
 /*-- clients--*/
 .clients{
-	padding:5em 0;
+	padding: 1em 0;
 }
 .clients h3{
 	color:#000;
@@ -3311,12 +3314,23 @@ a.read-agileits {
 }
 /*-- //responsive design --*/
 
-<!--
-By CDK
--->
+/* <!--By CDK--> */
 .ecjtu_1{
     border: red 1px;
     width: 100%;
     height: 60px;
     color: #15b7e6;
+}
+.logo-img {
+    width: 50px;
+}
+@media screen and (max-width: 414px) {
+    .video-cls {
+        width: 100% !important
+    }
+}
+@media screen and (min-width: 415px) and (max-width: 992px) {
+    .video-cls {
+        width: 100% !important
+    }
 }
