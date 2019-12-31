@@ -34,6 +34,7 @@
         href="http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese"
         rel="stylesheet">
     <!-- //googlefonts -->
+    <link href="./css/viewer.css" rel="stylesheet">
     <!-- qingxie css -->
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon-C.ico" />
@@ -77,7 +78,7 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="index.html">主页</a></li>
                                 <li class="active"><a href="about.html">个人简介</a></li>
-                                <li><a href="weixin.html">微信</a></li>
+                                <!-- <li><a href="weixin.html">微信</a></li> -->
                                 <li><a href="https://weibo.com/u/3127226035?refer_flag=1001030102_&is_all=1"
                                         target="_blank">微博</a></li>
                                 <li class="dropdown">
@@ -91,6 +92,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="myzone.html">个人空间</a></li>
+                                <li><a href="toEven.html">ToEven</a></li>
                             </ul>
 
                         </nav>
@@ -112,7 +114,7 @@
 
             <section class="slider">
                 <div class="flexslider">
-                    <ul class="slides">
+                    <ul class="slides" id="my-slides">
                         <li>
                             <img src="./qingxie_images/images/2017_alien_covenant_4k-5120x2880-1920x1080.jpg" alt="" />
                             <p>拍摄时间：2018年元旦左右，地点：湖北省博物馆（武汉的确是一座由交通和大学托起来的城市）
@@ -186,7 +188,7 @@
                     <p>……这些话已经刻进了我的骨子日，它们会像歌曲一样不自觉的就念起。</p>
                     <p>文学方面比较喜欢古典小说，比如经典的中国传统四大名著——《三国演义》《水浒传》《西游记》等，当然还有兰陵笑笑生的《金瓶梅》；《鲁滨逊漂流记》是我最喜欢的一部外国小说，另外《简爱》《童年》也是很不错的，最近在研究李渔的《肉蒲团》（当然是电影启蒙的^
                         ^，感觉剧情很奇特）。</p>
-                    <p>游戏方面和很多人一样站长的启蒙游戏也是童年时的“小霸王”学习机，《超级玛丽》《魂斗罗》《1990》《影子传说》《冒险岛》《智慧桥》《忍者神龟》……每当说起这些游戏的名字时，童年时那些欢声笑语就又在脑海中回荡起来了。街机时代最喜欢的当属《三国战纪》系列，《西游释厄传》也很不错，那时真的希望可以买一台街机放在家里无限的投币玩哈哈。街机时代之后的PC机网游时代，我接触最早的网游是CS和《穿越火线》，当然要说最喜欢的网游还是之后的《英雄联盟》，单机游戏就很多了，比如RTS经典《红色警戒２》《帝国时代》，动作RPG游戏《真三国无双》系列，《侠盗飞车》系列，FPS游戏《使命召唤》系列，《求生之路》系列，ACT《猎天使魔女》，策略游戏《三国志》系列，仙侠RPG《仙剑奇侠传》系列，《幻想三国志4》，武侠RPG《侠客风云传》系列等等，这些都是站长比较喜欢玩的游戏。
+                    <p>游戏方面和很多人一样站长的启蒙游戏也是童年时的“小霸王”学习机，《超级玛丽》《魂斗罗》《1990》《影子传说》《冒险岛》《智慧桥》《忍者神龟》……每当说起这些游戏的名字时，童年时那些欢声笑语就又在脑海中回荡起来了。街机时代最喜欢的当属《三国战纪》系列，《西游释厄传》也很不错，那时真的希望可以买一台街机放在家里无限的投币玩哈哈。街机时代之后的PC机网游时代，我接触最早的网游是CS和《穿越火线》，当然要说最喜欢的网游还是之后的《英雄联盟》，单机游戏就很多了，比如RTS经典《红色警戒２》《帝国时代》，动作RPG游戏《真三国无双》系列，《侠盗飞车》系列，《上古卷轴5》，FPS游戏《使命召唤》系列，《求生之路》系列，ACT游戏《猎天使魔女》，策略游戏《三国志》系列，仙侠RPG《仙剑奇侠传》系列，《幻想三国志4》，武侠RPG《侠客风云传》系列等等，这些都是站长比较喜欢玩的游戏。
                     </p>
                     <p>目前站长的个人规划是在未来5年内成为一名高级前端工程师，之后我将离开软件开发行业，全力冲击考公务员，如果失败则先准备历史学的考研工作，争取考上历史系研究生后读研。三年后研究生毕业再次冲击公务员事业，如果一直冲击失败的话会考虑先当一名历史老师/研究学者，边准备边工作。
                     </p>
@@ -292,6 +294,9 @@
 <!-- for bootstrap working -->
 <script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+<!-- viewer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.5.0/viewer.common.js"></script>
+<!-- viewer.js end-->
 <!-- //js -->
 <!-- //here starts scrolling icon -->
 <script src="js/SmoothScroll.min.js"></script>
@@ -362,12 +367,16 @@
     $(window).load(function () {
         $('.flexslider').flexslider({
             animation: "slide",
+            slideshowSpeed: 7000,
             start: function (slider) {
                 $('body').removeClass('loading');
             }
         });
     });
+    // $('#my-slides').viewer();
 </script>
 <!-- //FlexSlider-JavaScript -->
-
+<script>
+    const viewer1 = new Viewer(document.getElementById('my-slides'));
+</script>
 </html>
