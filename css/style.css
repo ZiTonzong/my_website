@@ -1639,7 +1639,7 @@ ul.ab li a:hover{
 .w3_agileits_footer_grids{
 	margin:3em 0;
 }
-.wthree_footer_grid_right input[type="email"]{
+.wthree_footer_grid_right input[type="text"]{
 	outline: none;
     padding: 12px;
     background: rgb(27, 27, 27);
@@ -1650,7 +1650,7 @@ ul.ab li a:hover{
     border: none;
 	letter-spacing:1px;
 }
-.wthree_footer_grid_right input[type="email"]::-webkit-input-placeholder{
+.wthree_footer_grid_right input[type="text"]::-webkit-input-placeholder{
 	color:#ffff !important;
 }
 .wthree_footer_grid_right input[type="submit"]{
@@ -2417,7 +2417,7 @@ span.hrm{
 .w3_agileits_footer_grid input[type="submit"] {
     width: 30%;
 }
-.w3_agileits_footer_grid input[type="email"] {
+.w3_agileits_footer_grid input[type="text"] {
     width: 68%;
 }
 .w3layouts_gallery_grid1_pos {
@@ -3209,7 +3209,7 @@ h3.w3l-titles:after, h2.w3l-titles:after {
 .w3_agileits_footer_grid input[type="submit"] {
     width: 31%;
 }
-.w3_agileits_footer_grid input[type="email"] {
+.w3_agileits_footer_grid input[type="text"] {
     width: 67%;
 }
 .main-textgrids {
@@ -3300,7 +3300,7 @@ a.read-agileits {
 .pricing-grid.grid-three {
     margin: 0 0em 1em 0;
 }
-.wthree_footer_grid_right input[type="email"] {
+.wthree_footer_grid_right input[type="text"] {
     width: 100%;
     margin-right: 0em;
     margin-bottom: 1em;
